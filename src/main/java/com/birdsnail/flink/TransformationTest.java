@@ -3,6 +3,7 @@ package com.birdsnail.flink;
 import lombok.ToString;
 import org.apache.flink.api.common.functions.*;
 import org.apache.flink.api.common.operators.Order;
+import org.apache.flink.api.java.CollectionEnvironment;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.aggregation.Aggregations;
@@ -196,6 +197,7 @@ public class TransformationTest {
                         out.collect(key + ":" + String.join("-", second) + ":" + third.stream().mapToInt(Integer::intValue).sum());
                     }
                 }).print();
+
     }
 
     @ToString

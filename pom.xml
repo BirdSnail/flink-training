@@ -92,10 +92,12 @@ under the License.
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--hadoop依赖不需要打入到uber jar中，实际运行时只需要配置HADOOP_CLASSPATH-->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-hadoop-compatibility_2.11</artifactId>
             <version>1.9.0</version>
+            <scope>provided</scope>
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>org.apache.flink</groupId>-->
@@ -245,6 +247,23 @@ under the License.
                     <groupId>org.apache.flink</groupId>
                     <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>
                     <version>${flink.version}</version>
+                    <scope>compile</scope>
+                </dependency>
+            </dependencies>
+        </profile>
+
+        <profile>
+            <id>add-dependency-for-access-hadoop</id>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+
+            <dependencies>
+                <dependency>
+                    <groupId>org.apache.flink</groupId>
+                    <artifactId>flink-hadoop-compatibility_2.11</artifactId>
+                    <version>1.9.0</version>
                     <scope>compile</scope>
                 </dependency>
             </dependencies>
