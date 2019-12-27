@@ -5,3 +5,4 @@ target/
 *.class
 sink.txt
 sink1.txt
+dependency-reduced-pom.xml

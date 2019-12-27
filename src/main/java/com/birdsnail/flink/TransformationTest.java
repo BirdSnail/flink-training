@@ -1,6 +1,5 @@
 package com.birdsnail.flink;
 
-import com.google.gson.internal.Streams;
 import lombok.ToString;
 import org.apache.flink.api.common.functions.*;
 import org.apache.flink.api.common.operators.Order;
