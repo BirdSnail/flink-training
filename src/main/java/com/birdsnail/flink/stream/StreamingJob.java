@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.birdsnail.flink;
+package com.birdsnail.flink.stream;
 
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 

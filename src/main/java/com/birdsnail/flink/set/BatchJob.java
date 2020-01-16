@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.birdsnail.flink;
+package com.birdsnail.flink.set;
 
 import org.apache.flink.api.common.JobExecutionResult;
 import org.apache.flink.api.common.accumulators.IntCounter;

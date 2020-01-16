@@ -1,4 +1,4 @@
-package com.birdsnail.flink;
+package com.birdsnail.flink.set;
 
 import lombok.SneakyThrows;
 import org.apache.flink.api.common.functions.MapFunction;

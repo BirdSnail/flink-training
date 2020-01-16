@@ -1,4 +1,4 @@
-package com.birdsnail.flink;
+package com.birdsnail.flink.set;
 
 import lombok.ToString;
 import org.apache.flink.api.common.functions.*;
@@ -23,7 +23,7 @@ import java.util.stream.StreamSupport;
  * @author BirdSnail
  * @date 2019/12/24
  */
-public class TransformationTest {
+public class DataSetTransformationTest {
 
 
     public static void main(String[] args) throws Exception {
